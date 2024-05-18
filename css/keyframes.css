@@ -1,0 +1,50 @@
+@keyframes bezosSuperSize {
+    0% {
+        transform: scale(1) rotate(0deg);
+        color: black;
+    }
+    25% {
+        transform: scale(2.5) rotate(90deg);
+        color: pink;
+    }
+    50% {
+        transform: scale(0.5) rotate(570deg);
+        color: darkgreen;
+    }
+    75% {
+        transform: scale(3.75) rotate(-1200deg);
+        color: blue;
+    }
+    100% {
+        transform: scale(1.25) rotate(25deg);
+        color: red;
+    }
+
+}@keyframes jump{
+
+    0% {transform: translateY(0);}
+    20% {transform:translateY(-20px)}
+    40% {transform:translateY(-20px)}
+    60% {transform:translateY(-20px)}
+    80% {transform:translateY(-20px)}
+    100% {transform:translateY(-20px)}
+
+}
+@keyframes jumpDollar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+@keyframes jumpEuro {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+@keyframes dropp {
+    
+    0% {transform: translateY(0);}
+    20% {transform:translateY(20vw)}
+    40% {transform:translateY(40vw)}
+    60% {transform:translateY(0vw)}
+    80% {transform:translateY(60vw)}
+    100% {transform:translateY(0vw)}
+
+}
