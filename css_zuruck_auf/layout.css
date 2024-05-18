@@ -1,0 +1,228 @@
+/* General */
+
+.page__content {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.page__content__modules {
+    padding: var(--base-padding);
+    display: flex;
+    flex-flow:wrap;
+}
+
+/* Specific */
+
+.page__title {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page__title h1,
+.page__title h2 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: var(--small-padding);
+}
+
+.page__title h1 {
+    cursor: help;
+    transition: transform 0.5s ease;
+}
+
+.page__title h2 {
+    transition: color 1s ease;
+}
+
+.page__title h2:hover {
+    animation: bezosSuperSize 5s linear alternate-reverse;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.page__title h1:hover {
+    transform: rotate(-7.5deg);
+    color:darkgoldenrod;
+    background-color: darkgreen;
+    border: 5px solid darkgoldenrod;
+    margin-top: -10px;
+}
+
+.page__title h1:hover::before,
+.page__title h1:hover::after {
+    position: absolute;
+    content: '$$$$';
+    font-size: 100%;
+    font-family: 'Times New Roman', serif;
+    color:darkgreen;
+    transform-origin: center;
+}
+
+.page__title h1:hover::before {
+    transform: translate(-100%,0);
+}
+
+
+#people,
+#money,
+#euro,
+#dollar {
+    transition: font-size 0.25s ease;
+}
+
+#people:hover{
+    font-size: 0vw;
+    color:darkmagenta;
+    transition: font-size 6s ease;
+}
+
+#money:hover {
+    font-size: 30vw;
+    color: darkgreen;
+    transition: font-size 6s ease;
+}
+
+#euro:hover {
+    color:lawngreen;
+    font-size: 50px;
+    transition: font-size 3s ease;
+}
+
+#dollar:hover {
+    font-size: 50px;
+    color: rgb(16, 255, 255);
+    transition: font-size 3s ease;
+}
+
+#euro::before,
+#euro::after {
+    position: absolute;
+    content: '😀';
+    padding: 0 var(--small-padding);
+    font-size: 100%;
+    color: darkgoldenrod;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+
+#euro:hover::after {
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+
+#euro:hover::before,
+#euro:hover::after {
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+#euro::before {
+    transform: translate(-100%,0);
+}
+
+#dollar:hover {
+    color:rgb(0, 238, 255);
+    font-size: 50px;
+    transition: font-size 3s ease;
+}
+
+
+
+#dollar::before,
+#dollar::after {
+    position: absolute;
+    content: '😁';
+    padding: 0 var(--small-padding);
+    font-size: 100%;
+    color: darkgoldenrod;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+
+#dollar:hover::after {
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+
+
+#dollar:hover::before,
+#dollar:hover::after {
+    opacity: 1;
+    transition: opacity 3s ease;
+}
+#dollar::before {
+    transform: translate(-100%,0);
+}
+
+
+/* Elements */
+
+.dollar {
+    color: rgb(31, 224, 31);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.euro {
+    color: rgba(255, 255, 0, 0.856);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #00f;
+}
+
+
+
+.wrapper {
+    position: relative;
+}
+
+.dollar:hover {
+    display: inline-block;
+    position: absolute;
+    animation: jumpDollar 6s ease infinite alternate;
+}/*
+
+.euro{
+    display: inline-block;
+    animation: jumpEuro 1s ease infinite alternate;
+}*/
+
+
+
+

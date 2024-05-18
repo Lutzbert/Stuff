@@ -1,0 +1,107 @@
+/* General */
+
+.people__content {
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.people__content__modules {
+    padding: var(--base-padding);
+    display: flex;
+    flex-flow:wrap;
+}
+
+/* Specific */
+
+.people__title {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.people__title h1,
+.people__title h2 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: var(--small-padding);
+}
+
+.people__title h1 {
+    cursor: help;
+    transition: transform 0.5s ease;
+}
+
+.people__title h2 {
+    transition: color 1s ease;
+}
+
+.people__title h2:hover {
+    animation: bezosSuperSize 5s linear alternate-reverse;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    background-color: transparent;
+}
+
+.people__title h1:hover {
+    transform: rotate(-7.5deg);
+    color:darkgoldenrod;
+    background-color: darkgreen;
+    border: 5px solid darkgoldenrod;
+    margin-top: -10px;
+}
+
+.people__title h1:hover::before,
+.people__title h1:hover::after {
+    position: absolute;
+    content: '$$$$';
+    font-size: 100%;
+    font-family: 'Times New Roman', serif;
+    color:darkgreen;
+    transform-origin: center;
+}
+
+.people__title h1:hover::before {
+    transform: translate(-100%,0);
+}
+
+#schmindex:hover{
+    font-size: 0vw;
+    color:rgb(89, 155, 169);
+    transition: font-size 6s ease;
+}
+
+/*elements*/
+
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: #00f;
+}
